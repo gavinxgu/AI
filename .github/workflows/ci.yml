@@ -6,7 +6,7 @@ on:
     branches: [ "main" ]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, X64, actors-wsl]
     steps:
       - uses: actions/checkout@v3
         with:
